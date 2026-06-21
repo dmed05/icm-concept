@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+workspace_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+exec git --git-dir="$workspace_root/.git-data" --work-tree="$workspace_root" "$@"
