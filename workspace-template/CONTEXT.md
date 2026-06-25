@@ -17,6 +17,7 @@
 - `shared/`: stable references used by multiple stages
 - `input/`: working material supplied for the current run
 - `stages/`: numbered workflow stages
+- `LEARNING_LOG.md`: public-safe development milestones and lessons learned
 
 ## Stage map
 

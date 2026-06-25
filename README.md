@@ -21,6 +21,7 @@ Generated projects should be created in a user-chosen destination, preferably ou
 | Path | Purpose |
 |---|---|
 | `CONTEXT.md` | Root routing map for deciding which resource or stage to use. |
+| `LEARNING_LOG.md` | Public-safe record of development milestones and engineering decisions. |
 | `setup/` | Project-creation questionnaire and intake material. |
 | `stages/` | Numbered builder stages for design, scaffold, and validation. |
 | `workspace-template/` | Clean source copied into each generated project. |
@@ -88,6 +89,14 @@ CONTEXT.md
 
 From that point forward, the generated project is the active workspace. This builder remains the source for creating or updating workspace structures.
 
+## Maintaining the Learning Log
+
+Use `LEARNING_LOG.md` to record concise, public-safe development milestones. Good entries explain what changed, why it matters, and what safety or validation decision was made.
+
+Do not put raw customer data, source exports, credentials, private file paths, or sensitive business details in the learning log. Summarize the engineering work instead.
+
+The template includes its own `LEARNING_LOG.md`, so newly generated workspaces inherit this habit automatically.
+
 ## Resuming Work
 
 To resume builder work from an earlier session, read the newest dated file in:
@@ -121,4 +130,3 @@ Before executing any numbered stage:
 5. Ask for approval before loading an undeclared file, stating the file and why it is needed.
 
 At completion, report the context manifest as a context audit. Files used only for root identity and routing should be listed separately from stage inputs.
-
