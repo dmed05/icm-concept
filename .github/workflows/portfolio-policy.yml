@@ -1,0 +1,29 @@
+name: Portfolio Policy
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-policy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  portfolio-policy:
+    name: portfolio-policy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate portfolio and privacy policy
+        env:
+          PORTFOLIO_COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: bash scripts/portfolio-check.sh
