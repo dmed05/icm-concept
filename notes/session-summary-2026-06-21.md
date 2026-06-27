@@ -52,9 +52,8 @@ This is realistic as a low-cost experiment and portfolio strategy. It is not ass
 
 ## Source document reviewed
 
-The following document was reviewed:
-
-`/home/dm/Downloads/Affiliate Marketing High-Ticket Success.docx`
+One private source document was reviewed. Its local path and filename are
+intentionally omitted from this public summary.
 
 Useful ideas from it:
 
@@ -135,4 +134,3 @@ Create the Remote Income Opportunity Lab brief collaboratively, complete the set
 Suggested resume prompt:
 
 > Read `AGENTS.md`, `CONTEXT.md`, and `notes/session-summary-2026-06-21.md`. Resume by creating the Remote Income Opportunity Lab project brief with me, then run the builder's design stage.
-

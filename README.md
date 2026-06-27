@@ -16,6 +16,31 @@ The builder follows a staged process:
 
 Generated projects should be created in a user-chosen destination, preferably outside this repository. Do not convert the root folders of this builder into a production workflow.
 
+## What I Built
+
+I turned the ICM folder-based orchestration method into a working project builder. The repository combines a guided requirements questionnaire, staged design contracts, a deterministic Python scaffolder, a reusable workspace template, validation rules, and a documented handoff process.
+
+Instead of starting every AI project with an unstructured prompt, the builder creates a durable workspace where identity, routing, stage inputs, outputs, stable rules, and human-review points are explicit files.
+
+## How It Supports My Operations
+
+I use this builder pattern to convert repeatable business processes into structured AI workspaces before automating them. It helps me:
+
+- capture requirements before implementation begins;
+- keep operational rules separate from run-specific inputs;
+- limit each stage to the context it actually needs;
+- preserve decisions and progress between sessions;
+- validate generated workspace structure before handoff; and
+- improve one reusable template instead of rebuilding each workflow from scratch.
+
+This public repository contains the builder and sanitized development notes. Generated operational workspaces and their source data remain separate.
+
+## My Role and Design Decisions
+
+My role was to adapt the methodology into a repeatable implementation. I designed the questionnaire-to-workspace flow, stage contracts, context-manifest rules, template structure, validation stage, learning-log pattern, and deterministic creation utility.
+
+The central design choice was to make context loading inspectable. Stage inputs act as an explicit allowlist, while human approval is required before reading undeclared material or moving between consequential stages.
+
 ## Directory Guide
 
 | Path | Purpose |
